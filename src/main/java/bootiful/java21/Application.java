@@ -8,13 +8,13 @@ import org.springframework.context.annotation.Bean;
 import javax.swing.*;
 
 @SpringBootApplication
-public class CreakinglyOldLongSinceIrrelevantJava20Application {
+public class Application {
 
     public static void main(String[] args) {
         System.setProperty("java.awt.headless" , "false");
         new SpringApplicationBuilder()
                 .headless(false)
-                .sources(CreakinglyOldLongSinceIrrelevantJava20Application.class)
+                .sources(Application.class)
                 .run(args);
     }
 
@@ -27,6 +27,7 @@ public class CreakinglyOldLongSinceIrrelevantJava20Application {
             jFrame.setVisible(true);
             jFrame.setLocationRelativeTo(null);
             jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            System.out.println("jframe started");
         };
     }
 
