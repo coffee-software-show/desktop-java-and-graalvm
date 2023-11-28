@@ -11,7 +11,6 @@ import javax.swing.*;
 public class Application {
 
     public static void main(String[] args) {
-        System.setProperty("java.awt.headless" , "false");
         new SpringApplicationBuilder()
                 .headless(false)
                 .sources(Application.class)
