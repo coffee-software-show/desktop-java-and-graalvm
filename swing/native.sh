@@ -2,4 +2,4 @@
 
 rm -rf target
 
-./mvnw -Pnative -DskipTests  native:compile  && ./target/nativejavafx
+./mvnw -Pnative -DskipTests  native:compile  && ./target/native-swing 
